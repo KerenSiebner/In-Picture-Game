@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Game of Healthy Choices</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Thasadith">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Waterfall">
+</head>
+
+<body onload="initGame()">
+    <div class="container">
+        <h1>“ Tell me what you eat, <br> and I will tell you what you are.”<br> <span>– G.K. chesterton.</span></h1>
+        <div class="imgcont">
+            <img class="image" src="img/1.jpg" alt="">
+        </div>
+        <button class="answer option1" data-index=0 onClick="checkAnswer(this)">Definitly eat the Ice cream!</button> 
+        <button class="answer option2" data-index=1 onClick="checkAnswer(this)">Nah. I'll pass...</button>
+        
+    </div>
+    <div class="end">
+        <h2 class="best">Wow you make great healthy choices! <br> You are an example for others!</h2>
+        <h2 class="okay">Not bad. <br> But there is still some room to improve!</h2>
+        <h2 class="worst">You need to start taking care of yourself! <br>Our nutrition is the most important part of our health. </h2>
+        <button class="reset" onClick="restartGame()">Try Again?</button>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
